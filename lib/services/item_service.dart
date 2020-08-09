@@ -16,11 +16,13 @@ class ItemService{
     _prefs = await SharedPreferences.getInstance();
     _cityId = _prefs.getInt('cityId');
     
+    var fields = '_fields=id,listingtitle,listingsubtitle,listingdescription,contactno,alternateno,alternateno2,email,alternateemail,source,sourceurl,listingimage1,listingimage2,address';
     var itemUrl = "newscategory";
     if(menu=='Doctors'){
       itemUrl = "doctor";
     }else if(menu=='News'){
       itemUrl = "news";
+      fields = '_fields=id,newstitle,newssubtitle,newsdescription,newssource';
     }else if(menu=='Explore'){
       itemUrl = "listing";
     }else if(menu=='Emergency'){
@@ -34,7 +36,7 @@ class ItemService{
     }else if(menu=='Tourism'){
       itemUrl = "tourism";
     }else if(menu=='Shopping'){
-      itemUrl = "shopping";
+      itemUrl = "shop";
     }
 
     var categoryUrl = "newscategory";
@@ -58,7 +60,7 @@ class ItemService{
       categoryUrl = "shoppingcategory";
     }
 
-    return http.get(API_BASE_URL + '/$itemUrl?per_page=10&$categoryUrl=$categoryId&city=$_cityId').then((data) {
+    return http.get(API_BASE_URL + '/$itemUrl?per_page=10&$categoryUrl=$categoryId&city=$_cityId&$fields').then((data) {
       if (data.statusCode == 200) {
         final jsonData = jsonDecode(data.body);
         final items = <Item>[];

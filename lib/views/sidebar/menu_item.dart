@@ -14,7 +14,7 @@ class MenuItem extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(5),
         child: Row(
           children: <Widget>[
             Icon(
@@ -27,7 +27,7 @@ class MenuItem extends StatelessWidget {
             ),
             Text(
               title,
-              style: TextStyle(fontFamily: appFontFamily, fontWeight: FontWeight.w400, fontSize: 20, color: Colors.white),
+              style: TextStyle(fontFamily: appFontFamily, fontWeight: FontWeight.w400, fontSize: 16, color: Colors.white),
             )
           ],
         ),

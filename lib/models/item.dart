@@ -34,14 +34,11 @@ Item _$ItemFromJson(dynamic json, menu) {
       id = json["id"];
       title = json["listingtitle"];
       content = json["listingdescription"];
-    }else if(menu=='Covid-19'){
+    }else if(menu=='News'){
       id = json["id"];
-      title = json["listingtitle"];
-      content = json["listingdescription"];
-      contactNo = json["contactNo"];
-      alternateNo = json["alternateNo"];
-      email = json["email"];
-      alternateEmail = json["alternateEmail"];
+      title = json["newstitle"];
+      subtitle = json["newssubtitle"];
+      content = json["newsdescription"];
     }else{
       id = json["id"];
       title = json["listingtitle"];

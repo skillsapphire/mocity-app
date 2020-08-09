@@ -80,10 +80,17 @@ class _EditLocationState extends State<EditLocation> {
               DropdownButton(
                 hint: Text('Please choose your city'),
                 value: _selectedCity,
-                onChanged: (newValue) {
+                onChanged: (newValue) async {
                   setState(() {
                     _selectedCity = newValue;
                   });
+
+                  SharedPreferences prefs = await SharedPreferences.getInstance();
+                    prefs.setInt('cityId', _selectedCity['id']);
+                    prefs.setString('cityName', _selectedCity['name']);
+                    Navigator.of(context).pop();
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(menu: "Doctors")));
+
                 },
                 items: _cities.map<DropdownMenuItem<dynamic>>((dynamic city) {
                   return DropdownMenuItem<dynamic>(
