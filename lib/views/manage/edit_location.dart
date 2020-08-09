@@ -85,11 +85,11 @@ class _EditLocationState extends State<EditLocation> {
                     _selectedCity = newValue;
                   });
 
-                  SharedPreferences prefs = await SharedPreferences.getInstance();
+                 /* SharedPreferences prefs = await SharedPreferences.getInstance();
                     prefs.setInt('cityId', _selectedCity['id']);
                     prefs.setString('cityName', _selectedCity['name']);
                     Navigator.of(context).pop();
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(menu: "Doctors")));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(menu: "Doctors")));*/
 
                 },
                 items: _cities.map<DropdownMenuItem<dynamic>>((dynamic city) {
