@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "930832327071",
+    "firebase_url": "https://mocityapp-7185a.firebaseio.com",
+    "project_id": "mocityapp-7185a",
+    "storage_bucket": "mocityapp-7185a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930832327071:android:a6b5424b6bf45816539daa",
+        "android_client_info": {
+          "package_name": "com.moapps.mocity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930832327071-svlm8mjpvdmu3m64t10dsq5u190aef0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOFBjbyAnywQYtKCLdnNWsLQLPC009x8c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930832327071-svlm8mjpvdmu3m64t10dsq5u190aef0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

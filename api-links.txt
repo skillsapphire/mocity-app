@@ -1,0 +1,84 @@
+# awesome
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+
+# Command to generate release
+flutter build apk
+
+# enable internet connection
+https://stackoverflow.com/questions/60076098/flutter-app-working-on-emulator-but-not-on-device-uses-http-package
+# https://www.youtube.com/watch?v=1b06d2Ld8C4&feature=youtu.be
+
+
+#REST API
+http://odisha.moassist.in/wp-json/wp/v2/
+http://odisha.moassist.in/wp-json/wp/v2/news?per_page=10&search=cc
+http://odisha.moassist.in/wp-json/wp/v2/listingcategory/
+http://odisha.moassist.in/wp-json/wp/v2/listingcategory/?_fields=id,name
+http://odisha.moassist.in/wp-json/wp/v2/listingcategory/?parent=7
+http://odisha.moassist.in/wp-json/wp/v2/listing?listingcategory=6
+http://examples.com/wp-json/wp/v2/posts?categories=1&per_page=30&order=asc&search=hello
+https://wordpress.stackexchange.com/questions/248760/wp-rest-api-v2-posts-filter-by-search-category-name-not-working
+https://make.wordpress.org/core/2019/10/10/filtering-nested-rest-response-_fields-in-wp-5-3/
+http://odisha.moassist.in/wp-json/wp/v2/news?_fields=id,title,newsdescription
+http://odisha.moassist.in/wp-json/wp/v2/news?_fields=id,newsdescription&search=cc
+
+https://github.com/WP-API/rest-filter/blob/master/plugin.php
+http://www.sbpyp.com/site/index.php
+
+
+JWT Authentication for WP-API(plugin)
+https://www.youtube.com/watch?v=ER7DJYfirbQ&list=PLxXXUKNBoPJCDi6iw-LwezARiX-x96MUX&index=2
+
+http://odisha.moassist.in/wp-json - gives all endpoints and methods
+
+Create/Update/Delete
+http://odisha.moassist.in/wp-json/wp-json/jwt-auth/v1/token
+
+Create(POST)
+http://odisha.moassist.in/wp-json/wp/v2/listing
+http://odisha.moassist.in/wp-json/wp/v2/listing/52
+
+Delete
+http://odisha.moassist.in/wp-json/wp/v2/listing/52
+
+https://pods.io/docs/learn/field-types/relationship/
+https://docs.pods.io/tutorials/
+
+GET current user info
+http://odisha.moassist.in/wp-json/wp/v2/users/me
+https://wordpress.org/support/topic/i-get-sorry-you-are-not-allowed-to-create-new-users-in-service-call-by-jwt/
+https://torquemag.io/2015/08/working-with-users-via-the-wordpress-rest-api/
+https://wordpress.stackexchange.com/questions/311825/how-to-login-via-wordpress-api-and-get-user-details
+
+Register user or Retrieve password
+https://wordpress.org/plugins/wp-rest-user/
+
+http://odisha.moassist.in/wp-json/wp/v2/users/register
+{"username":"apiuser2", "email":"apiuser2@gmail.com", "password":"apiuser2"}
+
+http://odisha.moassist.in/wp-json/wp/v2/users/lostpassword
+{"user_login":"apiuser2"}
+
+Woocommerce multivendor plugin
+https://wclovers.github.io/wcfm-rest-api/#introduction
+
+Stop the user from going back
+https://stackoverflow.com/questions/44978216/flutter-remove-back-button-on-appbar#:~:text=You%20can%20remove%20the%20back,back%20to%20the%20earlier%20route.
+https://inducesmile.com/google-flutter/how-to-disable-or-override-back-button-in-flutter/
+
+
+
