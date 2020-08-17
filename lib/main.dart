@@ -5,6 +5,7 @@ import 'package:mocity/services/item_service.dart';
 import 'package:mocity/services/push_notification_service.dart';
 import 'package:mocity/services/user_service.dart';
 import 'package:mocity/views/Welcome/welcome_screen.dart';
+import 'package:mocity/views/contact/contact.dart';
 import 'package:mocity/views/overview/home.dart';
 import 'package:get_it/get_it.dart';
 import 'package:mocity/views/splash/splash_screen.dart';

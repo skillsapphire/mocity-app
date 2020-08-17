@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mocity/constants/ui_constants.dart';
+import 'package:mocity/views/contact/contact.dart';
 import 'package:mocity/views/manage/edit_location.dart';
 import 'package:mocity/views/overview/home.dart';
 import 'package:mocity/views/sidebar/menu_item.dart';
@@ -175,8 +176,12 @@ class _MainDrawerState extends State<MainDrawer> {
                       ),*/
                       MenuItem(
                         icon: Icons.contact_mail,
-                        title: "Contact",
+                        title: "Contact us",
                         iconColor: appMenuIconColor,
+                        onTap: () {
+                          Navigator.of(context).pop();
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Contact()));
+                        },
                       ),
                      /* Divider(
                         height: 30,

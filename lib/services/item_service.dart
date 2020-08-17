@@ -30,11 +30,11 @@ class ItemService{
     }else if(menu=='Covid-19'){
       itemUrl = "covid-19";
     }else if(menu=='Healthcare'){
-      itemUrl = "health";
+      itemUrl = "healthcare";
     }else if(menu=='Education'){
       itemUrl = "education";
     }else if(menu=='Tourism'){
-      itemUrl = "tourism";
+      itemUrl = "tour";
     }else if(menu=='Shopping'){
       itemUrl = "shop";
     }
